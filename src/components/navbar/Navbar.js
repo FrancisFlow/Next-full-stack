@@ -41,7 +41,7 @@ const Navbar = () => {
     return (
         <>
         <div className={styles.container}>
-            <Link href={"/"}>
+            <Link className={styles.logo} href={"/"}>
                 Think Business
             </Link>
 
