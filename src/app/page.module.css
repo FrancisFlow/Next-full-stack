@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.item {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    
+}
+
+.des {
+    font-size: 24px;
+    font-weight: 300;
+    
+}
+
+.button {
+    background-color: lightgreen;
+    padding: 20px;
+    color: white;
+    width: fit-content;
+    border: none;
+    border-radius: 5px;
+}
