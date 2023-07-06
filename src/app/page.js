@@ -3,6 +3,10 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-    <h2>I am the home page.</h2></>
+    <div className="home">
+      <Image src={"/images/hero.png"} width={500} height={500} 
+      alt='Hero image' />
+    </div>
+    </>
   )
 }
