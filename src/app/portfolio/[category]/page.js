@@ -22,6 +22,7 @@ const CategoryPage = ({params}) => {
                     src='/images/apps.jpg'
                     alt={params.category}/>
                 </div>
+                
             </div>
         </div>
         </>
