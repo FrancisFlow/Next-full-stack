@@ -1,28 +1,33 @@
 import Image from "next/image";
 import styles from "./contact.module.css"
+import Button from "@/components/button/Button";
 const ContactPage = () => {
-    return ( 
-        <>
-        <div className="contact">
-            <h1 className="text-5xl text-center font-bold" >Let&apos;s Keep in Touch</h1>
-            <div className="" >
-                <div className="">
-                    <Image  className={styles.contactImg} width={500} height={500} src="/images/contact.png" alt="contact hero"/>
-                </div>
-                <div className="">
-                <form className="form">
-                    <h2>Contact us</h2>
-                    <div>
-                        <label htmlFor="name">Name</label>
-                        <input type="text" name="name" placeholder="your name"/>
-                    </div>
-                </form>
-                </div>
-
-            </div>
+    return (
+      <div className={styles.container}>
+        <h1 className={styles.title}>Let's Keep in Touch</h1>
+        <div className={styles.content}>
+          <div className={styles.imgContainer}>
+            <Image
+              src="/images/contact.png"
+              alt=""
+              fill={true}
+              className={styles.image}
+            />
+          </div>
+          <form className={styles.form}>
+            <input type="text" placeholder="name" className={styles.input} />
+            <input type="text" placeholder="email" className={styles.input} />
+            <textarea
+              className={styles.textArea}
+              placeholder="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <Button url="#" text="Send"/>
+          </form>
         </div>
-        </>
-     );
-}
+      </div>
+    );
+  };
  
 export default ContactPage;
